@@ -10,7 +10,7 @@ object build extends Build {
       version := "0.8-SNAPSHOT",
       sbtPlugin := true,
       scalacOptions in Compile ++= Seq("-deprecation"),
-      publishTo := Some(Resolver.url("sbt-plugin-releases", new URL("http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases/"))(Resolver.ivyStylePatterns)),
+      publishTo := Some(Resolver.url("sbt-plugin-snapshots", new URL("http://edftwin.com:8081/nexus/content/repositories/snapshots"))(Resolver.ivyStylePatterns)),
       publishMavenStyle := false
     )
   )
